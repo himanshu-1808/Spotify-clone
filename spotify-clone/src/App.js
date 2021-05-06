@@ -39,13 +39,18 @@ function App() {
         });
       });
     }
-spotify.getUserPlaylists().then((playlists)=>{
-  dispatch({
-    type:"SET_PLAYLISTS",
-    playlists:playlists,
-  });
-});
-
+    spotify.getUserPlaylists().then((playlists) => {
+      dispatch({
+        type: "SET_PLAYLISTS",
+        playlists: playlists,
+      });
+    });
+    spotify.getPlaylist('22e90f204590451983f493f8b4af8f51').then(response =>
+      dispatch({
+        type: "SET_DISCOVER_WEEKLY",
+        discover_weekly: response,
+      })
+    );
 
 
   }, []);
@@ -53,9 +58,9 @@ spotify.getUserPlaylists().then((playlists)=>{
   return (
     <div className="app">
       {
-        token ? 
-          <Player spotify={spotify}/>
-         : <Login />
+        token ?
+          <Player spotify={spotify} />
+          : <Login />
       }
 
     </div>

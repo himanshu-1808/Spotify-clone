@@ -52,3 +52,6 @@ margin-bottom: 5px;
 .footer_songInfo>p{
     font-size: 12px;
     }
+.footer_right *.MuiSlider-root{
+    color:green;
+}
