@@ -7,10 +7,10 @@
    transition:80ms color ease-in;
 }
 .sidebar>hr{
-   border: 1px solid #282828; 
-   width:90%;
-   margin:10px auto;
-}
+    border: 1px solid #282828; 
+    width:90%;
+    margin:10px auto;
+ }
 .sidebarOption:hover{
     color:white;
 }

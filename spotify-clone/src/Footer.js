@@ -17,8 +17,8 @@ function Footer() {
             <div className="footer_left">
                 <img className="albumLogo" src="https://upload.wikimedia.org/wikipedia/en/f/f7/XXXTentacion_%E2%80%93_Skins.png" alt="" />
                 <div className="footer_songInfo">
-                    <h4>No Songs</h4>
-                    <p>....</p>
+                    <h4>Moonlight</h4>
+                    <p>XXXTENTACION</p>
                 </div>
             </div>
             <div className="footer_center">

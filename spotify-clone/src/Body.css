@@ -1,13 +1,16 @@
 .body{
-
+overflow-y: overlay;
     flex: 0.8;
     padding: 30px;
     height: 100vh;
     color: white;
     background: linear-gradient(rgb(91,87,115),rgba(0,0,0,1));
 }
+.body::-webkit-scrollbar{
+    display: none;
+}
 .bodyInfo{
-    display: flex;
+    display: flex ;
     align-items: flex-end;
     padding: 10px;
 }
@@ -18,12 +21,45 @@
 }
 .body_infotext{
 flex: 1;
-}
-.body_infotext>h2{
-   font-size: 48px;
-   margin-bottom: 10px;
 
+}
+.body_infotext>h6{
+    margin-left:10px;
+    font-size: 12px;
+    margin-bottom: -5px;
+    }
+
+.body_infotext>h2{
+   font-size: 35px;
+   margin-left:10px;
 }
 .body_infotext>p{
         font-size: 14px;
+        margin-left:10px;
+}
+.body_icon{
+    display: flex;
+    align-items: center;
+
+}
+.body_icon> .MuiSvgIcon-root{
+    margin-right: 20px;
+    
+}
+.body_shuffle{
+    font-size: 65px!important;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #1ed15e;
+}
+.body_shuffle:hover{
+  transition: 100ms transform ease-in;
+  transform:scale(1.08);
+}
+.body_songs{
+    margin: 20px -30px;
+}
+.like_icon{
+    color:#1ed15e;
 }
